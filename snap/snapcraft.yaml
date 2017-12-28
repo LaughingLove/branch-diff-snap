@@ -5,11 +5,12 @@ description: |
     A tool to list print the commits on one git branch 
     that are not on another using loose comparison.
 grade: stable # must be 'stable' to release into candidate/stable channels
-confinement: strict # use 'strict' once you have the right plugs and slots
+confinement: classic # use 'strict' once you have the right plugs and slots
 
 apps:
     branch-diff:
         command: bin/branch-diff
+        plugs: [network]
 
 parts:
   branch-diff:
