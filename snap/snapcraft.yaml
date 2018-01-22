@@ -18,6 +18,7 @@ parts:
     source-tag: v1.7.0
     # See 'snapcraft plugins'
     plugin: nodejs
+    build-packages: [zlib1g-dev]
   git:
       source: https://github.com/git/git.git
       source-tag: v2.15.1
