@@ -17,9 +17,5 @@ parts:
     source: https://github.com/nodejs/branch-diff.git 
     source-tag: v1.7.0
     plugin: nodejs
+    stage-packages: [git]
     build-packages: [zlib1g-dev]
-  git:
-      source: https://github.com/git/git.git
-      source-tag: v2.15.1
-      plugin: autotools
-
